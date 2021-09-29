@@ -588,17 +588,17 @@ for (let i = 0; i < products.length; i++) {
        container.innerHTML +=
       `<article>
        <img src = ${products[i].image[0]}><br>
-      <span class = "span"> ${products[i].price} $</span><br>
-      <button class = "btn"><a href="./milk/milk.html">Go to category</a></button>
+       <span class = "span"> ${products[i].price} $</span><br>
+       <button class = "btn"><a href="./milk/milk.html">Go to category</a></button>
        </article>`
         break;
         case 44:
-          container.innerHTML +=
-          `<article>
-          <img src = ${products[i].image[0]}><br>
-          <span class = "span"> ${products[i].price} $ </span><br>
-          <button class = "btn"><a href="./frozen food/frozen.html">Go to category</a></button>
-          </article>`
+        container.innerHTML +=
+        `<article>
+         <img src = ${products[i].image[0]}><br>
+         <span class = "span"> ${products[i].price} $ </span><br>
+         <button class = "btn"><a href="./frozen food/frozen.html">Go to category</a></button>
+         </article>`
           break;
           case 33:
             container.innerHTML +=

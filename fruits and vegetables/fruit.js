@@ -1,13 +1,11 @@
 for (let i = 0; i < products.length; i++) {
   if (products[i].category=="Fruits and Vegetables") {
-
 /////////////////////////////////   זה כדי להראות את הדרך של הלולאה המקוננת
       // for (let j = 0; j < products[i].image.length; j++) {
       // if (products[i].category=="Fruits and Vegetables") {
       // container.innerHTML += `<img src =${products[i].image[j]}>`
       // }}
 ////////////////////////////////  
-
        container.innerHTML += 
        `<section>
          <article class = "milks">
@@ -16,11 +14,12 @@ for (let i = 0; i < products.length; i++) {
          <b>description:${products[i].description}</b><br>
          <b class = "price">${products[i].price}$</b><br>
          <button class = "btn">aad to cart</button>
-       </article>
-       </section>`
+         </article>
+        </section>`
   }  
   
 }
+
 let btn = document.getElementsByClassName("btn")
 for (let i = 0; i < btn.length; i++) {
    let button = btn[i]
@@ -29,3 +28,5 @@ for (let i = 0; i < btn.length; i++) {
       console.log(cartProducts);
    }
 }
+
+ 

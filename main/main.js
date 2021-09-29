@@ -605,7 +605,7 @@ for (let i = 0; i < products.length; i++) {
             `<article>
              <img src = ${products[i].image[0]}><br>
              <span class = "span"> ${products[i].price} $</span><br>
-             <button class = "btn"><a href="./ clean products/clean.html">Go to category</a></button>
+             <button class = "btn"><a href="./clean products/clean.html">Go to category</a></button>
              </article>`
             break;
       default:

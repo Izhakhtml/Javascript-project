@@ -15,12 +15,13 @@ for (let i = 0; i < products.length; i++) {
          <h1 class ="changeFont">${products[i].name}</h1><br>
          <b>description:${products[i].description}</b><br>
          <b class = "price">${products[i].price}$</b><br>
-         <button class = "btn">aad cart </button>
+         <button class = "btn">aad to cart</button>
        </article>
        </section>`
   }  
   
 }
+
 let btn = document.getElementsByClassName("btn")
 for (let i = 0; i < btn.length; i++) {
    let button = btn[i]

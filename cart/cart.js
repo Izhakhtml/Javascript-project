@@ -73,8 +73,9 @@ for (let i = 0; i < cartProducts.length; i++) {
  for (let i = 0; i < removeButton.length; i++) {
       removeProducts = removeButton[i]
       removeProducts.onclick = ()=>{
-      let changePrice = Math.floor(sum -= cartProducts[i].price)  //reduce price     
-      articleContain[i].style = "display:none;"  //remove article
+      let changePrice = Math.floor(sum -= cartProducts[i].price)  //reduce price    
+      // name1() 
+      articleContain[i].style = "display:none;"  //remove article    
       // cartProducts.splice(i,1)   //remove index from array
       // console.log(cartProducts);
       p1.innerText = `${changePrice} $`
@@ -83,7 +84,6 @@ for (let i = 0; i < cartProducts.length; i++) {
       }
       }     
 }
-
 
 
 

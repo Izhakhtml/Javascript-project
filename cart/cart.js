@@ -1,6 +1,3 @@
-
-let articleContain = document.getElementsByClassName("article")
-let removeButton = document.getElementsByClassName("remove")
 let trTitle = document.getElementsByClassName("tr")
 let imageDisplay = document.getElementsByClassName("img")
 let tdPrice = document.getElementsByClassName("td")
@@ -42,48 +39,77 @@ var cartProducts =
 for (let i = 0; i < cartProducts.length; i++) {
      trTitle[i].innerText = cartProducts[i].name
      imageDisplay[i].src = cartProducts[i].image[0] 
-     tdPrice[i].innerHTML =cartProducts[i].price
-     removeButton[i].innerText = "remove"
+     tdPrice[i].innerHTML = cartProducts[i].price
+     remove.innerText = "remove"
+     remove2.innerText = "remove"
+     remove3.innerText = "remove"
 
-//////////////////////////////////////// tried by javascript
-//      container.innerHTML += 
-//      `<article class = "article">
-//         <table>
-//         <th>
-//              <tr><b>${cartProducts[i].name}</b></tr>
-//         </th>
-//         <th>
-//              <td><img src = ${cartProducts[i].image[0]}></td>
-//         </th>
-//         <th>
-//              <td class = "td">${cartProducts[i].price} $</td>
-//         </th>
-//         <th>
-//              <td class = "td"><button class="remove">remove</button></td>
-//         </th>
-//         </table>
-//       </article>`   
+// //////////////////////////////////////// tried by javascript
+// //      container.innerHTML += 
+// //      `<article class = "article">
+// //        <table>
+// //                <tr>
+// //                    <th>produndts</th>
+// //                    <th>price</th>
+// //                    <th>remove products</th>
+// //                </tr> 
+// //                <tr>
+// //                    <td>${cartProducts[i].name}</td><td><img src = ${cartProducts[i].image[0]}></td><td>${cartProducts[i].price}</td><td class = "td"><button class="remove">remove</button></td>
+// //                </tr>
+// //        </table>
+// //      </article>` 
 }
-////////////////////////////////// display total
-for (let i = 0; i < cartProducts.length; i++) {
-    sum += cartProducts[i].price
-    p1.innerText = `${sum} $`
-} 
-///////////////////////////////// remove products 
- for (let i = 0; i < removeButton.length; i++) {
-      removeProducts = removeButton[i]
-      removeProducts.onclick = ()=>{
-      let changePrice = Math.floor(sum -= cartProducts[i].price)  //reduce price    
-      // name1() 
-      articleContain[i].style = "display:none;"  //remove article    
-      // cartProducts.splice(i,1)   //remove index from array
-      // console.log(cartProducts);
-      p1.innerText = `${changePrice} $`
-      if (changePrice == 0) {
-      p1.innerText = `${changePrice}` 
+//////////////////////////////// display total
+function displayTotal() {
+      for (let i = 0; i < cartProducts.length; i++) {
+           sum += cartProducts[i].price 
+           p1.innerText = `${sum} $` 
+      } return sum 
+}
+displayTotal()
+
+/////////////////////////////// remove products 
+function removeItems(name) {
+      for (let i = 0; i < cartProducts.length; i++) {
+         if (cartProducts[i].name == name) { 
+               let changeTotal = Math.floor(sum -= cartProducts[i].price)
+               p1.innerHTML = changeTotal
+               cartProducts.splice(i,1)
+               return 
+         }           
       }
-      }     
 }
+
+remove.onclick=()=>{
+      removeItems("Charger")
+      article.innerHTML=""
+      console.log(cartProducts);
+}
+remove2.onclick=()=>{
+      removeItems("headphones")
+      article2.innerHTML=""
+     console.log(cartProducts);
+}
+remove3.onclick=()=>{
+      removeItems("JBL box")
+      article3.innerHTML=""
+      console.log(cartProducts);  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

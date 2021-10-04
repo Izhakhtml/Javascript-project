@@ -44,7 +44,7 @@ for (let i = 0; i < cartProducts.length; i++) {
      remove2.innerText = "remove"
      remove3.innerText = "remove"
 
-// //////////////////////////////////////// tried by javascript
+////////////////////////////////////////// tried by javascript
 // //      container.innerHTML += 
 // //      `<article class = "article">
 // //        <table>

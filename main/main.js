@@ -572,7 +572,7 @@ let imageArray =
   "https://media.istockphoto.com/photos/woman-putting-green-bell-peppers-into-fridge-picture-id1287317519?k=20&m=1287317519&s=612x612&w=0&h=2MxLvn_ahkiNcx29nDWa6vZUOM-T0APb4UatdsMelBE="
 ]
 // let image = document.getElementById("img")
-img.src= imageArray[1]
+img.src = imageArray[1]
 let counter = 0
 window.setInterval(()=>{
 img.src= imageArray[counter]

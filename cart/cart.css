@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-/* ///////////////// hader */
+
 ul{
     list-style-type: none;
     display: flex;
@@ -30,53 +30,110 @@ ul a{
     text-decoration: none;
     color: black;
 }
-/* /////////////////// main */
-
-table, td, th {
-    border: 1px solid rgb(165, 104, 104);
+table,tr,td{
+    width: 1000px;
+    height: 100px;
+    margin-left: 12%;
 }
-table{
-    width: 100%;
-    border-collapse: collapse;
+table th{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
 }
-.td{
-    padding: 30px;
+p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#article{
-  margin: 10px;   
+th,td{
+     background-color: wheat;
 }
-#article2{
-    margin: 10px;   
+tr td img{
+   width: 100%;
+   height: 100%;
 }
-#article3{
-    margin: 10px;   
+.nameProduct{
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#article img{
-    width: 30%;
+.priceProduct{
+    text-align: center;
 }
-#article2 img{
-    width: 30%;
+#wrapButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
 }
-#article3 img{
-    width: 30%;
+.CHARGER{
+    border: none;
+    background-color: wheat;
+    
 }
-#remove{
-    border-radius: 40%;
+.HEADPHONES{
+    border: none;
+    background-color: wheat;
+}.JBL{
+    border: none;
+    background-color: wheat;
+}
+#CHARGER{
+    width: 15px;
+    height: 25px;
+    border: none;
+    background-color: wheat;
+}
+#HEADPHONES{
+    width: 15px;
+    height: 25px;
+    border: none;
+    background-color: wheat;
+}
+#JBL{
+    width: 15px;
+    height: 25px;
+    border: none;
+    background-color: wheat;
+}
+.rem_btn{
+    position: relative;
+    left: 70px;
     padding: 10px;
-    margin-left: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#remove2{
-    border-radius: 40%;
+#emptyPage{
+    border: 2px solid white; 
+    width: 1000px;
+    margin-left: 130px;
+    margin-top: 80px;
+    height: 400px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+    background-color: wheat;
+}
+div h1{
+    text-align: center;
+    margin-top: 140px;
+    font-size: 100px;
+    color: rgb(167, 162, 162); 
+}
+#CHARGER_0{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#HEADPHONES_1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#JBL_2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#show_price{
+    margin-left: 12%;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
-    margin-left: 15px;
-}
-#remove3{
-    border-radius: 40%;
-    padding: 10px;
-    margin-left: 15px;
-}
-#p1{
-  padding: 10px;
+    font-style:italic;
+    
+} 
+#icon_shakel{
+       margin-left: 5px;
+       font-size: 13px;
 }
 @media screen and (max-width:622px) {
     ul{
@@ -86,8 +143,8 @@ table{
         flex-wrap: wrap; 
         justify-content: space-between;
         } 
-     
 }
+
 @media screen and (max-width:425px) {
         #article{
             width: 590px;

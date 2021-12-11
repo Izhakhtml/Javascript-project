@@ -21,11 +21,21 @@ for (let i = 0; i < products.length; i++) {
 }
 
 let btn = document.getElementsByClassName("btn")
-for (let i = 0; i < btn.length; i++) {
-  let button = btn[i]
-  button.onclick = () => {
-    cartProducts.push(products[i])
-    console.log(cartProducts);
+// for (let i = 0; i < btn.length; i++) {
+//   let button = btn[i]
+//   button.onclick = () => {
+//     cartProducts.push(products[i])
+//     console.log(cartProducts);
+//   }
+// }
+let count = 0;
+function countTheNumber() {
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].onclick=()=>{
+    count++;
+    counter_pro.innerHTML=`${count}`;
+    counter_pro.style="position: relative;border:1px solid honeydew;bottom: 14px;border-radius:40px;padding:2px;background: rgb(184, 180, 180);";
+    }
   }
 }
-
+countTheNumber()

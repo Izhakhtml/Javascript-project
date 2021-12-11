@@ -4,13 +4,17 @@
 }
 body{
     background: rgb(212, 209, 209);
+    /* background: rgb(184, 180, 180); */
 }
+/* #counter_pro:hover{} */
+/* #counter_pro{box-shadow:10px 10px 10px 10px rgb(245, 232, 232);position: relative;right: 20px;bottom: 25px;} */
 #h1{
     font-size: 50px;
     color: rgb(95, 89, 89);
     filter: drop-shadow(0 0 0.75rem rgb(133, 129, 130));
     border-bottom: 2px black dotted;
     width:390px;
+    
 }
 .price{
     font-size: 30px;

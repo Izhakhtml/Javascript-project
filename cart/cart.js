@@ -76,7 +76,7 @@ var cartProducts =
      }
      removeTdFromTable()
      
-     function calSomthing(array,input,id,pricePro,counterNumber) {
+     function calSomthing(array,input,id,pricePro) {
      let counter = 1
      let priceProduct;
      input.value=counter
@@ -88,7 +88,7 @@ var cartProducts =
                      priceProduct = pricePro
                      counter++
                      input.value = `${counter}`
-                     id.innerHTML = counterNumber+=priceProduct
+                    //  id.innerHTML = counterNumber+=priceProduct
                      sum+=priceProduct
                      show_price.innerHTML = `TOTAL PRICE : ${sum}<i id="icon_shakel" class="fas fa-shekel-sign"></i>`
                      break;
@@ -97,7 +97,7 @@ var cartProducts =
                          priceProduct = pricePro
                          counter--
                          input.value = `${counter}`
-                         id.innerHTML=counterNumber-=priceProduct
+                        //  id.innerHTML=counterNumber-=priceProduct
                          if(id.innerHTML<"10"||id.innerHTML<"0")id.innerHTML=0;
                          console.log(id.innerHTML);
                          sum-=priceProduct
@@ -115,11 +115,11 @@ var cartProducts =
      }
      }
      //////////////////////////////////!   PRODUCTE CHARGER
-     calSomthing(ChargerButton,CHARGER,CHARGER_0,cartProducts[0].price,cartProducts[0].price)
+     calSomthing(ChargerButton,CHARGER,CHARGER_0,cartProducts[0].price)
      //////////////////////////////////!  PRODUCTE HEADPHONES
-     calSomthing(HeadphonsButton,HEADPHONES,HEADPHONES_1,cartProducts[1].price,cartProducts[1].price)
+     calSomthing(HeadphonsButton,HEADPHONES,HEADPHONES_1,cartProducts[1].price)
      //////////////////////////////////!  PRODUCTE JBL
-     calSomthing(JblButton,JBL,JBL_2,cartProducts[2].price,cartProducts[2].price)
+     calSomthing(JblButton,JBL,JBL_2,cartProducts[2].price)
 
 
 
